@@ -12,11 +12,12 @@ namespace StreamsExercise
 {
     public partial class FrmFileName : Form
     {
+
+        public static string SetFileName;
+
         public FrmFileName()
         {
             InitializeComponent();
-
-            this.Show();
 
             CreateButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
             CreateButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
@@ -24,7 +25,9 @@ namespace StreamsExercise
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-
+            string filename = fileNameTxt.Text;
+            SetFileName = filename + ".txt";
+            this.Close();
         }
 
         private void FrmFileName_Load(object sender, EventArgs e)

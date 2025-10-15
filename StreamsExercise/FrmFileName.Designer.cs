@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CreateButton = new System.Windows.Forms.Button();
             this.fileNameTxt = new System.Windows.Forms.RichTextBox();
-            this.NextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,24 +65,11 @@
             this.fileNameTxt.TabIndex = 6;
             this.fileNameTxt.Text = "";
             // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.NextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(325, 224);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(166, 61);
-            this.NextButton.TabIndex = 7;
-            this.NextButton.Text = "<BACK";
-            this.NextButton.UseVisualStyleBackColor = false;
-            // 
             // FrmFileName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 451);
-            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.fileNameTxt);
             this.Controls.Add(this.CreateButton);
             this.Controls.Add(this.label1);
@@ -100,6 +86,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.RichTextBox fileNameTxt;
-        private System.Windows.Forms.Button NextButton;
     }
 }
