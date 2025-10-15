@@ -1,0 +1,1 @@
+I learned what is a FileStream, it is the translator of files from bytes to string and vice versa. I also recalled the syntax like Write(), I used this syntax when I programmed our system that records the receipt of the user to a notepad.
