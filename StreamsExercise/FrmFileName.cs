@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace StreamsExercise
 {
-    public partial class Form1 : Form
+    public partial class FrmFileName : Form
     {
-        public Form1()
+        public FrmFileName()
         {
             InitializeComponent();
 
-            FrmFileName FileNameForm = new FrmFileName();
+            this.Show();
 
-            NextButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
-            NextButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
+            CreateButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
+            CreateButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
         }
 
-        private void NextButton_Click(object sender, EventArgs e)
+        private void CreateButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FrmFileName_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#F3F3F3");
         }
