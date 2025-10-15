@@ -32,8 +32,8 @@ namespace StreamsExercise
 
             string getInput = txtInput.Text;
 
-            string docPath =
-            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string relativePath = @"..\..\TextFiles";
+            string docPath = Path.GetFullPath(relativePath);
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,
             FrmFileName.SetFileName)))
             {
