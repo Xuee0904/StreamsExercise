@@ -32,7 +32,7 @@ namespace StreamsExercise
 
             string getInput = txtInput.Text;
 
-            string relativePath = @"..\..\TextFiles";
+            string relativePath = @"..\..\Madayag, Cedric Ashley J - LabStream";
             string docPath = Path.GetFullPath(relativePath);
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,
             FrmFileName.SetFileName)))

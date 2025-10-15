@@ -47,11 +47,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.GenderLabel = new System.Windows.Forms.Label();
-            this.MaleRB = new System.Windows.Forms.RadioButton();
-            this.FemaleRB = new System.Windows.Forms.RadioButton();
-            this.UnspecifiedRB = new System.Windows.Forms.RadioButton();
             this.BirthdayLabel = new System.Windows.Forms.Label();
             this.BirthdayPicker = new System.Windows.Forms.DateTimePicker();
+            this.GenderCombo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // StudentNoLabel
@@ -242,42 +240,6 @@
             this.GenderLabel.TabIndex = 23;
             this.GenderLabel.Text = "Gender";
             // 
-            // MaleRB
-            // 
-            this.MaleRB.AutoSize = true;
-            this.MaleRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaleRB.Location = new System.Drawing.Point(20, 365);
-            this.MaleRB.Name = "MaleRB";
-            this.MaleRB.Size = new System.Drawing.Size(55, 20);
-            this.MaleRB.TabIndex = 24;
-            this.MaleRB.TabStop = true;
-            this.MaleRB.Text = "Male";
-            this.MaleRB.UseVisualStyleBackColor = true;
-            // 
-            // FemaleRB
-            // 
-            this.FemaleRB.AutoSize = true;
-            this.FemaleRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FemaleRB.Location = new System.Drawing.Point(104, 365);
-            this.FemaleRB.Name = "FemaleRB";
-            this.FemaleRB.Size = new System.Drawing.Size(71, 20);
-            this.FemaleRB.TabIndex = 25;
-            this.FemaleRB.TabStop = true;
-            this.FemaleRB.Text = "Female";
-            this.FemaleRB.UseVisualStyleBackColor = true;
-            // 
-            // UnspecifiedRB
-            // 
-            this.UnspecifiedRB.AutoSize = true;
-            this.UnspecifiedRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnspecifiedRB.Location = new System.Drawing.Point(206, 365);
-            this.UnspecifiedRB.Name = "UnspecifiedRB";
-            this.UnspecifiedRB.Size = new System.Drawing.Size(97, 20);
-            this.UnspecifiedRB.TabIndex = 26;
-            this.UnspecifiedRB.TabStop = true;
-            this.UnspecifiedRB.Text = "Unspecified";
-            this.UnspecifiedRB.UseVisualStyleBackColor = true;
-            // 
             // BirthdayLabel
             // 
             this.BirthdayLabel.AutoSize = true;
@@ -296,17 +258,24 @@
             this.BirthdayPicker.Size = new System.Drawing.Size(287, 20);
             this.BirthdayPicker.TabIndex = 28;
             // 
+            // GenderCombo
+            // 
+            this.GenderCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderCombo.FormattingEnabled = true;
+            this.GenderCombo.Location = new System.Drawing.Point(14, 361);
+            this.GenderCombo.Name = "GenderCombo";
+            this.GenderCombo.Size = new System.Drawing.Size(287, 24);
+            this.GenderCombo.TabIndex = 29;
+            // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(638, 515);
+            this.Controls.Add(this.GenderCombo);
             this.Controls.Add(this.BirthdayPicker);
             this.Controls.Add(this.BirthdayLabel);
-            this.Controls.Add(this.UnspecifiedRB);
-            this.Controls.Add(this.FemaleRB);
-            this.Controls.Add(this.MaleRB);
             this.Controls.Add(this.GenderLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -355,10 +324,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label GenderLabel;
-        private System.Windows.Forms.RadioButton MaleRB;
-        private System.Windows.Forms.RadioButton FemaleRB;
-        private System.Windows.Forms.RadioButton UnspecifiedRB;
         private System.Windows.Forms.Label BirthdayLabel;
         private System.Windows.Forms.DateTimePicker BirthdayPicker;
+        private System.Windows.Forms.ComboBox GenderCombo;
     }
 }

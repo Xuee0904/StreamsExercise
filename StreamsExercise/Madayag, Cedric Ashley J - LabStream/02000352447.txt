@@ -1,0 +1,7 @@
+Student Number: 02000352447
+Full Name: Madayag, Cedric Ashley Jimenez
+Program: Bachelor of Science in Information Technology (BSIT)
+Gender: Male
+Age: 22
+Birthday: 2003-05-28
+Contact Number: 09123456789
